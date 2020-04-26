@@ -1,3 +1,8 @@
+#Note: The data presented in this model was merged from many different sources includding Kaggle, JohnsHopkins 
+# and the NOAA. All data mininng and extrapolation was performed by me. Neural network construct was sourced from 
+# a paper online and was applyed to this data to yield predictions.
+
+
 #!/usr/bin/env python
 # coding: utf-8
 
