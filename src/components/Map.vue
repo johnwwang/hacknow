@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div>
     <h1>hack::now</h1>
@@ -20,10 +19,32 @@
       ref="mapRef"
       @dragend="handleDrag"
     ></GmapMap>
+    <h2>1st</h2>
     <heat-map
-      :points="data"
-      :lat="myCoordinates.lat"
-      :lng="myCoordinates.lng"
+      :points="data1"
+      :lat="37.782"
+      :lng="-122.447"
+      style="width:640px; height: 360px; margin: 32px auto;"
+    />
+    <h2>2nd</h2>
+    <heat-map
+      :points="data2"
+      :lat="37.782"
+      :lng="-122.447"
+      style="width:640px; height: 360px; margin: 32px auto;"
+    />
+    <h2>3rd</h2>
+    <heat-map
+      :points="data3"
+      :lat="37.782"
+      :lng="-122.447"
+      style="width:640px; height: 360px; margin: 32px auto;"
+    />
+    <h2>4th</h2>
+    <heat-map
+      :points="data4"
+      :lat="37.782"
+      :lng="-122.447"
       style="width:640px; height: 360px; margin: 32px auto;"
     />
   </div>
@@ -42,22 +63,33 @@ export default {
         lng: 0
       },
       zoom: 7,
-      data: [
+      data1: [
         { location: new google.maps.LatLng(37.782, -122.447), weight: 0.5 },
         new google.maps.LatLng(37.782, -122.445),
         { location: new google.maps.LatLng(37.782, -122.443), weight: 2 },
         { location: new google.maps.LatLng(37.782, -122.441), weight: 3 },
-        { location: new google.maps.LatLng(37.782, -122.439), weight: 2 },
-        new google.maps.LatLng(37.782, -122.437),
-        { location: new google.maps.LatLng(37.782, -122.435), weight: 0.5 },
-
-        { location: new google.maps.LatLng(37.785, -122.447), weight: 3 },
-        { location: new google.maps.LatLng(37.785, -122.445), weight: 2 },
-        new google.maps.LatLng(37.785, -122.443),
-        { location: new google.maps.LatLng(37.785, -122.441), weight: 0.5 },
-        new google.maps.LatLng(37.785, -122.439),
-        { location: new google.maps.LatLng(37.785, -122.437), weight: 2 },
-        { location: new google.maps.LatLng(37.785, -122.435), weight: 3 }
+        { location: new google.maps.LatLng(37.782, -122.439), weight: 2 }
+      ],
+      data2: [
+        { location: new google.maps.LatLng(37.782, -122.447), weight: 0.5 },
+        new google.maps.LatLng(37.782, -122.445),
+        { location: new google.maps.LatLng(37.782, -122.443), weight: 2 },
+        { location: new google.maps.LatLng(37.782, -122.441), weight: 3 },
+        { location: new google.maps.LatLng(37.782, -122.439), weight: 2 }
+      ],
+      data3: [
+        { location: new google.maps.LatLng(37.782, -122.447), weight: 0.5 },
+        new google.maps.LatLng(37.782, -122.445),
+        { location: new google.maps.LatLng(37.782, -122.443), weight: 2 },
+        { location: new google.maps.LatLng(37.782, -122.441), weight: 3 },
+        { location: new google.maps.LatLng(37.782, -122.439), weight: 2 }
+      ],
+      data4: [
+        { location: new google.maps.LatLng(37.782, -122.447), weight: 0.5 },
+        new google.maps.LatLng(37.782, -122.445),
+        { location: new google.maps.LatLng(37.782, -122.443), weight: 2 },
+        { location: new google.maps.LatLng(37.782, -122.441), weight: 3 },
+        { location: new google.maps.LatLng(37.782, -122.439), weight: 2 }
       ]
     };
   },

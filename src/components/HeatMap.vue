@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div ref="heatmap" :style="`width: ${mapWidth}; height: ${mapHeight}`" />
 </template>
@@ -17,7 +16,7 @@ export default {
     },
     initialZoom: {
       type: Number,
-      default: () => 13
+      default: () => 3
     },
     mapType: {
       type: String,
@@ -60,10 +59,7 @@ export default {
       }
     },
     heatmapPoints() {
-      return this.points.map(
-        // eslint-disable-next-line
-        point => new google.maps.LatLng(point.lat, point.lng)
-      );
+      return this.points;
     }
   },
   mounted() {
@@ -76,7 +72,7 @@ export default {
       });
       // eslint-disable-next-line
       this.$heatmap = new google.maps.visualization.HeatmapLayer({
-        data: this.points,
+        data: this.heatmapPoints,
         map: this.$mapObject,
         opacity: this.opacity,
         maxIntensity: this.maxIntensity
