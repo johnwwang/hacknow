@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div ref="heatmap" :style="`width: ${mapWidth}; height: ${mapHeight}`" />
 </template>

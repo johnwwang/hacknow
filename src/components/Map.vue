@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div>
     <h1>hack::now</h1>
