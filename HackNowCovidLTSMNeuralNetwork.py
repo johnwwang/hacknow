@@ -1,6 +1,7 @@
 #Note: The data presented in this model was merged from many different sources includding Kaggle, JohnsHopkins 
 # and the NOAA. All data mininng and extrapolation was performed by me. Neural network construct was sourced from 
-# a paper online and was applyed to this data to yield predictions.
+# a paper online and was applyed to this data to yield predictions. Time series generation was conduct using a function
+# sourced from Kaggle and modified for my data set. Both cases and fatalities were projected using the LSTM network. 
 
 
 #!/usr/bin/env python
